@@ -41,4 +41,9 @@
   </p>
 </section>
 
-<app-offer-preview />
+@defer(on viewport) {
+  <app-offer-preview /> <!-- https://angular.dev/guide/templates/defer -->
+} @placeholder {
+  <p>We might have an offer...</p>
+}
+
