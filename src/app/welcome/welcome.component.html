@@ -41,9 +41,9 @@
   </p>
 </section>
 
-@defer(on viewport) {
+@defer(on interaction) {
   <app-offer-preview /> <!-- https://angular.dev/guide/templates/defer -->
 } @placeholder {
-  <p>We might have an offer...</p>
+  <p class="fallback">We might have an offer...</p>
 }
 
